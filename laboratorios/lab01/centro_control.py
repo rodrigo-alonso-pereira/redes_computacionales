@@ -27,4 +27,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as servidor:
                 conn.sendall(respuesta.encode('utf-8'))
             elif data.strip() == "MISION_COMPLETA":
                 conn.sendall("Centro de control: Comunicación finalizada. Buen trabajo, astronautas.")
-                break;
+                break
