@@ -86,19 +86,19 @@ Cualquier otro formato es rechazado y se solicita al usuario reintentar.
 
 **Terminal 1 - Centro de Control (TCP):**
 ```bash
-cd /path/to/lab01
+cd /path/to/lab1_16610470_USACH
 python3 centro_control.py
 ```
 
 **Terminal 2 - Sistema de Alertas (UDP):**
 ```bash
-cd /path/to/lab01
+cd /path/to/lab1_16610470_USACH
 python3 sistema_alertas.py
 ```
 
 **Terminal 3 - Estación Espacial (Cliente):**
 ```bash
-cd /path/to/lab01
+cd /path/to/lab1_16610470_USACH
 python3 estacion_espacial.py
 ```
 
@@ -114,9 +114,10 @@ El cliente presenta un menú interactivo con tres opciones:
 
 ```
 [ESTACION ESPACIAL] Iniciando sistema de comunicaciones...
+
 1. Conectar con Centro de Control
 2. Enviar alerta rapida
-3. Abortar el envio de mensajes y salir
+3. Salir
 Seleccione una opcion (1-3):
 ```
 
