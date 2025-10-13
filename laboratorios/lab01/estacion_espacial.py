@@ -13,7 +13,7 @@ def verificar_mensaje_tcp(mensaje):
 
 while True:
     # Menu de opciones
-    print("\n[ESTACION ESPACIAL] Iniciando sistema de comunicaciones...")
+    print("\n[ESTACION ESPACIAL] Iniciando sistema de comunicaciones...\n")
     print("1. Conectar con Centro de Control")
     print("2. Enviar alerta rapida")
     print("3. Salir")
