@@ -47,6 +47,19 @@ while True:
             print("\n[ESTACION ESPACIAL] Desconectado de Sistemas de Alertas")
         break
     elif opcion == '3': # Salir
+        try: # Enviar señal de cierre a TCP
+            with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as tcp_shutdown:
+                tcp_shutdown.connect((HOST, tcp_port))
+                tcp_shutdown.sendall("MISION_COMPLETA".encode('utf-8'))
+        except:
+            pass
+        
+        try: # Enviar señal de cierre a UDP
+            with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as udp_shutdown:
+                udp_shutdown.sendto("base_segura".encode('utf-8'), (HOST, udp_port))
+        except:
+            pass
+        
         print("\n[ESTACION ESPACIAL] Saliendo del sistema de comunicaciones. Hasta luego astronauta!")
         break
     else: # Opcion no valida
