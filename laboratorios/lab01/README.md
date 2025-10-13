@@ -132,7 +132,7 @@ Permite enviar alertas rápidas:
 - `base_segura` - Finaliza el modo de emergencia
 
 #### Opción 3: Salir
-Cierra el sistema sin establecer conexión.
+Cierra el sistema sin establecer conexión. Ademas cierra los servidores TCP y UDP de forma ordenada.
 
 ### 🎯 Centro de Control (Servidor TCP)
 
