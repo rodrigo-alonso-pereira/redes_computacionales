@@ -16,7 +16,7 @@ while True:
     print("\n[ESTACION ESPACIAL] Iniciando sistema de comunicaciones...")
     print("1. Conectar con Centro de Control")
     print("2. Enviar alerta rapida")
-    print("3. Abortar el envio de mensajes y salir")
+    print("3. Salir")
     opcion = input("Seleccione una opcion (1-3): ")
 
     if opcion == '1': # Conexion Centro de Control [TCP]
@@ -59,7 +59,7 @@ while True:
                 udp_shutdown.sendto("base_segura".encode('utf-8'), (HOST, udp_port))
         except:
             pass
-        
+
         print("\n[ESTACION ESPACIAL] Saliendo del sistema de comunicaciones. Hasta luego astronauta!")
         break
     else: # Opcion no valida
